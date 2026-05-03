@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.ag2.ai)",
+      "WebFetch(domain:ag2-hackathon.vercel.app)",
+      "WebFetch(domain:github.com)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git remote *)",
+      "Bash(git push *)"
+    ]
+  }
+}

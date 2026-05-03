@@ -1,3 +1,4 @@
-ag2[gemini]
+ag2[openai]
+streamlit
 tavily-python
 python-dotenv
