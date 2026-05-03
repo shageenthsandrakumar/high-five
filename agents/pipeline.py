@@ -30,10 +30,11 @@ def _parse_json(text: str) -> dict:
 
 def _call_agent(name: str, system_message: str, task: str) -> str:
     """Spin up one AG2 agent, get a single response, return it."""
+    from agents.config import get_llm_config
     agent = ConversableAgent(
         name=name,
         system_message=system_message,
-        llm_config=LLM_CONFIG,
+        llm_config=get_llm_config(),
         human_input_mode="NEVER",
     )
     proxy = UserProxyAgent(
@@ -46,11 +47,24 @@ def _call_agent(name: str, system_message: str, task: str) -> str:
 
     buf = io.StringIO()
     with redirect_stdout(buf), redirect_stderr(buf):
-        proxy.initiate_chat(agent, message=task, max_turns=1)
+        result = proxy.initiate_chat(agent, message=task, max_turns=1)
 
+    # Try ChatResult object first
+    if result and hasattr(result, "chat_history") and result.chat_history:
+        for msg in reversed(result.chat_history):
+            if msg.get("role") == "assistant":
+                return msg["content"]
+
+    # Fallback: proxy.chat_messages
     for msg in reversed(proxy.chat_messages.get(agent, [])):
         if msg.get("role") == "assistant":
             return msg["content"]
+
+    # Last resort: agent's last message
+    msgs = agent.chat_messages.get(proxy, [])
+    if msgs:
+        return msgs[-1].get("content", "")
+
     return ""
 
 
