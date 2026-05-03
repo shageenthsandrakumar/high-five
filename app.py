@@ -128,6 +128,12 @@ header[data-testid="stHeader"] { background: transparent; }
     color: rgba(0,0,0,0.4) !important;
 }
 
+/* Body text — make all output readable against dark background */
+p, li, span, div, label, .stMarkdown, .stMarkdown p, .stMarkdown li {
+    color: rgba(255,255,255,0.88) !important;
+}
+h1, h2, h3, h4, h5, h6 { color: white !important; }
+
 /* Dividers */
 hr { border-color: rgba(255,255,255,0.08) !important; }
 
