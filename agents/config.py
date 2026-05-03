@@ -6,7 +6,7 @@ load_dotenv()
 LLM_CONFIG = {
     "config_list": [
         {
-            "model": "google/gemini-2.0-flash-001",
+            "model": "google/gemini-2.0-flash",
             "api_key": os.environ.get("OPENROUTER_API_KEY", ""),
             "base_url": "https://openrouter.ai/api/v1",
             "api_type": "openai",
