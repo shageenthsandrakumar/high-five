@@ -104,8 +104,11 @@ We built CreatorCrew in one day at the AG2 Hackathon in NYC. The core of the app
 ## Meet the Team
 
 **Shageenth Sandrakumar** — Project Co-Lead. Built and deployed the entire CreatorCrew application, architected the six-agent AG2 pipeline, and managed the end-to-end technical execution.
+
 **Miriam Contino** — Co-created the pitch presentation, produced the demo video, and contributed 35% of the Product Requirements Document.
+
 **TaliZ** — Project Co-Lead. Project Ideation, created the pitch presentation and contributed 30% of the Product Requirements Document.
+
 **Susan** — Contributed 35% of the Product Requirements Document.
 
 ---
