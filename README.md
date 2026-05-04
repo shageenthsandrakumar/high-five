@@ -91,9 +91,7 @@ high-five/
 ---
 
 ## How We Built It
-
-<!-- ✏️ MIRIAM — add a paragraph here about the build process, decisions you made, or anything about the architecture. Then commit it! -->
-
+We built CreatorCrew in one day at the AG2 Hackathon in NYC. The core of the app is a six-agent pipeline powered by AG2 (formerly AutoGen), where each agent has a single responsibility — from profiling the audience to generating scripts to scheduling posts. We used Google Gemini 2.5 Flash via OpenRouter as the LLM backbone, Tavily for live web search to ground the agents in real data, and Streamlit to ship a polished UI fast.
 ---
 
 ## Demo & Screenshots
