@@ -92,6 +92,7 @@ high-five/
 
 ## How We Built It
 We built CreatorCrew in one day at the AG2 Hackathon in NYC. The core of the app is a six-agent pipeline powered by AG2 (formerly AutoGen), where each agent has a single responsibility — from profiling the audience to generating scripts to scheduling posts. We used Google Gemini 2.5 Flash via OpenRouter as the LLM backbone, Tavily for live web search to ground the agents in real data, and Streamlit to ship a polished UI fast.
+
 ---
 
 ## Demo & Screenshots
@@ -102,9 +103,9 @@ We built CreatorCrew in one day at the AG2 Hackathon in NYC. The core of the app
 
 ## Meet the Team
 
-**Shageenth Sandrakumar** — Project Lead. Built and deployed the entire CreatorCrew application, architected the six-agent AG2 pipeline, and managed the end-to-end technical execution.
+**Shageenth Sandrakumar** — Project Co-Lead. Built and deployed the entire CreatorCrew application, architected the six-agent AG2 pipeline, and managed the end-to-end technical execution.
 **Miriam Contino** — Co-created the pitch presentation, produced the demo video, and contributed 35% of the Product Requirements Document.
-**TaliZ** — Project Ideation, created the pitch presentation and contributed 30% of the Product Requirements Document.
+**TaliZ** — Project Co-Lead. Project Ideation, created the pitch presentation and contributed 30% of the Product Requirements Document.
 **Susan** — Contributed 35% of the Product Requirements Document.
 
 ---
